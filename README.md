@@ -1,12 +1,11 @@
 # Space Trader
-A simple game with no particular goal, made with the cCurses library for C++.
+A simple game with no particular goal, made with the Curses library for C++.
 Sort of inspired by games like Escape Velocity and Endless Sky.
 
 ## Building
 For proper compilation, you'll need the these included files
 ```
 trader.cpp
-trader.h
 solsystem.cpp
 solsystem.h
 player.sav
