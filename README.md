@@ -1,5 +1,5 @@
 # Space Trader
-A simple game with a text-based UI, made with the curses library for C++.
+A simple game with no particular goal, made with the cCurses library for C++.
 Sort of inspired by games like Escape Velocity and Endless Sky.
 
 ## Building
