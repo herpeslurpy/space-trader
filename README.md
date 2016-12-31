@@ -3,6 +3,14 @@ A simple game with no particular goal, made with the cCurses library for C++.
 Sort of inspired by games like Escape Velocity and Endless Sky.
 
 ## Building
+For proper compilation, you'll need the these included files
+```
+trader.cpp
+trader.h
+solsystem.cpp
+solsystem.h
+player.sav
+```
 The makefile included should work just fine, simply run ```make```.
 If not, manual compilation should look something like:
 ```
@@ -28,7 +36,6 @@ with
 ```
 -lncurses
 ```
-
 If you want to use the makefile, make the same change within it.
 
 I've tested compiling with a few C++ versions, back to at least C++98,
