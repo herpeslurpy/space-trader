@@ -2,8 +2,6 @@
 Patrick Letts, 2016
 Distributed under the MIT license.
 Copy available in ./LICENSE
-
-Version 0.1
 */
 
 #include <string>
@@ -380,12 +378,12 @@ void openManual(){
 	mvwprintw(manual, 2, 1, "1: Open dialog to jump to a new system.");
 	mvwprintw(manual, 3, 1, "2: Open market for current system to buy cargo.");
 	mvwprintw(manual, 4, 1, "3-5: Display data on player, ship, and system.");
-	mvwprintw(manual, 5, 1, "Press e/E to quit the game.");
+	mvwprintw(manual, 5, 1, "Press e to quit the game.");
 	mvwprintw(manual, 7, 1, "After jumping, there is a chance to be attacked");
 	mvwprintw(manual, 8, 2, "by pirates.");
 	mvwprintw(manual, 9, 1, "Your goal is to trade between systems and");
 	mvwprintw(manual, 10, 2, "survive pirate attacks.");	
-	mvwprintw(manual, 11, 1, "A better manual may be found in ./README");
+	mvwprintw(manual, 11, 1, "A better manual may be found in ./README.md");
 	
 
 	/*
