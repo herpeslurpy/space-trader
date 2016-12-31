@@ -44,5 +44,5 @@ Also, this was written with terminal dimensions of 80x24 in mind,
 so adjust those if necessary. A bigger terminal won't be too wonky,
 but I can't guarantee anything smaller will be usable.
 
-## Contributing
-This project is licensed under the MIT license. For now this is a very small personal project that probably won't be receiving much, if any attention in two weeks from now. If it ever grows beyond that, I'll open it up.
+## Other things
+For now this is a small personal project that probably won't be receiving much attention in two weeks, if any.
