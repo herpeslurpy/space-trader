@@ -49,10 +49,9 @@ Your chance of attack is currently calculated based on how much of your
 inventory is full. Pirates want your booty.
 Right now there are no pirates. :(
 
-###Ship
-Also in the top right, you can see information concerning your ship.
-Your ship's name is Snaggletooth for now and you'll like it.
-The rest concerns commodities and cargo space. You may hold any amount
+### Ship
+Also in the top right, you can see information concerning your ship, which includes your name,
+commodities and cargo space. You may hold any amount
 of any material, on the condition that the total does not exceed your
 cargo capacity.
 
@@ -61,6 +60,9 @@ This displays the name of the system you're currently in,
 and the price per unit of each product.
 
 The other two parts of your display aren't especially worth going into detail about, for now.
+
+Currently there is no proper system in place to rename your character or ship;
+For now you can force it in by editing the first and third lines in player.sav, respectively.
 
 Pressing `e` while not doing anything special (jumping, browsing the market, etc.)
 will immediately quit the game, saving your data.
