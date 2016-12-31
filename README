@@ -1,0 +1,102 @@
+Pat Letts, 2016
+
+#PROGRAM INFO
+-------------
+A simple game with a text-based UI, made with the curses library for C++.
+Sort of inspired by games like Escape Velocity and Endless Sky.
+
+The makefile included should work just fine, simply run 'make'.
+If not, manual compilation should look something like:
+	'g++ trader.cpp solsystem.cpp -o <name> -lcurses'
+where <name> is whatever you'd prefer to call the executable.
+I don't really have a name for this game yet.
+
+You'll need all the included files (doy), and the C++ curses library.
+Currently it's also entirely compatible with the newer ncurses library,
+if you'd rather use that. If you want to, in main.cpp, replace
+	#include <curses.h>
+with
+	#include <ncurses.h>
+
+and when compiling, replace
+	-lcurses
+with
+	-lncurses
+
+If you want to use the makefile, make the same change within it.
+
+I've tested compiling with a few C++ versions, back to at least C++98,
+so any modern linux machine should be good to go.
+
+Also, this was written with terminal dimensions of 80x24 in mind,
+so adjust those if necessary. A bigger terminal won't be too wonky,
+but I can't guarantee anything smaller will be usable.
+
+I suppose I'll consider this version to be 0.1
+
+#GAME INFO
+----------
+Here's a manual that's much more verbose than the in-game manual.
+That one is terrible and I should get rid of it.
+
+Currently there are four "star systems" available to the player;
+Each system has a unique prices for each commodity available.
+Some prices in one system may be lower or higher in another system.
+Make money off this.
+
+When first starting the game, you'll notice four distinct divisions of the
+screen;
+
+The top left portion shows basic functions, bound to keys 1-5.
+
+Jump:   A dialog window in the lower right portion will appear,
+	prompting you to enter a system to jump to.
+	For now, this is case-sensitive. Available systems are shown in
+	the lower left portion, your current system highlighted in red.
+	If an invalid system name is given, the window will warn you;
+	this 
+
+Market: This will open a window with a good chunk of information.
+	You'll see the system you're in, just for reference.
+	Below, each commodity is listed, along with the value of one [unit]
+	of it in this system.
+
+	Also shown is how much space is left in your cargo hold,
+	and the number of credits you currently have.
+
+	Select a commodity to purchase with the numbers to the left.
+	Next you'll be able to choose how many units of that commodity
+	you'd like to buy; use your square bracket keys to increment and
+	decrement the quantity. You'll also see your cargo space and credits
+	adjust for this, and you may not buy more than you can hold or afford.
+	The number between the brackets shows how much you currently hold;
+	any increase in this value is considered a purchase and will remove
+	cargo space and credits. Any decrease is considered selling, and you'll
+	gain money and cargo space. Pressing 'q' will immediately close this
+	window and you'll leave the market.
+
+Player: This is information about yourself. All info is displayed in the top right
+	portion.
+	For now, shown is your name, the number of credits you currently have,
+	and the chance of being attacked by pirates upon entering a system.
+	Right now there are no pirates.
+	Your chance of attack is currently calculated based on how much of your
+	inventory is full. Pirates want your booty.
+
+Ship:   Also in the top right, you can see information concerning your ship.
+	Your ship's name is Snaggletooth and you'll like it.
+	The rest concerns commodities and cargo space. You may hold any amount
+	of any material, on the condition that the total does not exceed your
+	cargo capacity.
+
+System: This portion displays the name of the system you're currently in,
+	and the price per unit of each product.
+
+The lower left portion is mostly static, and lists all start systems.
+Your current system is highlighted in red.
+
+The lower right portion of the terminal is generally a catch-all space
+for input and various windows.
+
+Pressing 'e' while not doing anything special (jumping, browsing the market, etc.)
+will immediately quit the game, saving your data.
